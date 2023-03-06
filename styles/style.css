@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inconsolata&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor1: #252636;
+    --cor2: #224024;
+    --cor3: #244131;
+    --cor4: #25a18e;
+    --cor5: #7ae582;
+    --cor6: #a4ccaa;
+    --cor7: #20a8948e;
+    --cor8: #b8cdca;
+    --cor9: #ffffff;
+
+}  
+.body{
+    font-family: 'Inconsolata';
+    background-color: var(--cor7);
+}
+.cabecalho {
+    padding: 2% 1% 1% 15%;
+}
+.cabecalho_menu {
+    display: flex;
+    gap: 70px;
+}
+.cabecalho_menu_link {
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--cor1);
+    text-decoration:overline;
+
+}
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+}
+.titulo_destaque {
+    color: var(--cor4);
+}
+.apresentacao_conteudo{
+    width: 615px;
+    gap: 2px
+    
+}
+.apresentacao_conteudo_titulo{
+    font-size: 36px;
+    font-family: 'Inconsolata';
+}
+.apresentacao_conteudo_texto{
+    font-size: 15px;
+    font-family: 'Inconsolata';
+    text-align: left;
+}
+.headline {
+    font-size: 23px;
+    color: --cor1;
+    font-family: 'Inconsolata';
+    text-align: center;
+    border:solid;
+    border-color: var(--cor4);
+}
+.faq-container{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+}
+.faq_page {
+    font-size: 18px;
+    font-family: 'Inconsolata';
+    text-align: left;
+    line-height: 200%;
+    color: var(--cor3);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq_body{
+    font-size: 18px;
+    font-family: 'Inconsolata';
+    line-height: 200%;
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   row-gap: 3px;
+   
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq_page:hover {
+    background-color:var(--cor7);
+    color: var(--cor9);
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq_body {
+    padding: 0 18px;
+    background-color: var(--cor8);
+    display: none;
+    overflow: hidden;
+}
+.faq_page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: rgb(73, 73, 73);
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+.destaque {
+    color: var(--cor3);
+}
+.links {
+    color: var(--cor2)
+}
