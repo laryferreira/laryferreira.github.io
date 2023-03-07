@@ -1,4 +1,4 @@
-
+/* FAQ */
 var faq = document.getElementsByClassName("faq_page");
 var i;
 
