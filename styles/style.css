@@ -111,10 +111,10 @@
     padding: 0 18px;
     display: none;
     overflow: hidden;
+    background-color: #b8cdca;
 }
 .faq_page:after {
     content: '\02795';
-    background-color: #b8cdca;
     font-size: 13px;
     color: rgb(73, 73, 73);
     float: right;
