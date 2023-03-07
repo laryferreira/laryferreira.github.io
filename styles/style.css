@@ -93,29 +93,28 @@
     font-family: 'Inconsolata';
     line-height: 200%;
     margin: auto;
-    /* text-align: center; */
+
    width: 50%; 
    padding: auto;
    row-gap: 3px;
    
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active,
 .faq_page:hover {
     background-color:var(--cor7);
     color: var(--cor9);
 }
-/* Style the faq-page panel. Note: hidden by default */
+
 .faq_body {
     padding: 0 18px;
-    background-color: var(--cor8);
     display: none;
     overflow: hidden;
 }
 .faq_page:after {
     content: '\02795';
-    /* Unicode character for "plus" sign (+) */
+
     font-size: 13px;
     color: rgb(73, 73, 73);
     float: right;
@@ -123,7 +122,7 @@
 }
 .active:after {
     content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+ 
 }
 .destaque {
     color: var(--cor3);
