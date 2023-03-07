@@ -127,11 +127,18 @@ input{
     font-size: 36px;
     font-family: 'Inconsolata';
 }
+.contatos {
+    width: 320px;
+    padding: 15px;
+    border: 2px solid var(--cor4);
+    margin: 0;
+    text-align: center;
+    font-family: 'Inconsolata'
+    
+}
 .apresentacao_conteudo_titulo_contato{
     font-size: 20px;
-    font-family: 'Inconsolata';
-    text-align: center;
-    text-decoration:wavy;
+
 }
 .apresentacao_conteudo_texto{
     font-family: 'Inconsolata';
@@ -139,8 +146,7 @@ input{
 }
 .apresentacao_conteudo_texto_contato {
     font-size: 18px;
-    font-family: 'Inconsolata';
-    text-align: center;
+    gap: 2px;
 }
 .headline {
     font-size: 23px;
@@ -213,10 +219,6 @@ input{
 .links {
     color: var(--cor2)
 }
-
-
-
-
 
 /* Footer */
 
