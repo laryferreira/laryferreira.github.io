@@ -226,7 +226,7 @@ input{
     font-size: 18px;
     font-family: 'Inconsolata';
     text-align: center;
-    color:var(--cor2);
+    color:var(--cor1);
   }
   .icon-style {
     height: 60px;
