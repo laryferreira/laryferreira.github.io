@@ -1,5 +1,5 @@
 /* FAQ */
-var faq = document.getElementsByClassName("faq_page");
+var faq = document.getElementsByClassName("faq_page");document.getElementsByClassName("headline");
 var i;
 
 for (i = 0; i < faq.length; i++) {
