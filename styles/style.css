@@ -9,15 +9,20 @@
     --cor3: #244131;
     --cor4: #25a18e;
     --cor5: #7ae582;
-    --cor6: #a4ccaa;
+    --cor6: #b8cebc;
     --cor7: #20a8948e;
     --cor8: #b8cdca;
     --cor9: #ffffff;
+    --cor10: #229f8cc5;
+    --cor11: #25a18e91;
+
+
 
 }  
 .body{
     font-family: 'Inconsolata';
     background-color: var(--cor7);
+    
 }
 .cabecalho {
     padding: 2% 1% 1% 15%;
@@ -170,7 +175,7 @@ input{
 }
 .active,
 .faq_page:hover {
-    background-color:var(--cor4);
+    background-color: var(--cor10);
     color: var(--cor9);
 }
 
@@ -197,9 +202,51 @@ input{
 .links {
     color: var(--cor2)
 }
+
+
+
+
+
+/* Footer */
+
 .footer {
-    background-color:var(--cor4);
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 50px;
+    background-color:var(--cor6);
+  }
+  .footer-content-right {
+    padding-right:40px;
+    margin-top:20px;
+    float:right;
+  }
+  .text_content{
+    font-size: 18px;
+    font-family: 'Inconsolata';
     text-align: center;
-    color:var(--cor9);
-    padding: 0% 0% 0% 0%;
+    color:var(--cor1);
+  }
+  .icon-style {
+    height: 60px;
+    margin-left:2px;
+    margin-top:-90px;
+    margin-bottom: 15px;
+
+  }
+  img {
+    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    -webkit-mask-size: 800%;
+    mask-size: 800%;
+    -webkit-mask-position: 0;
+    mask-position: 0;
+}
+
+img:hover {
+    transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+    opacity: 1;
 }
