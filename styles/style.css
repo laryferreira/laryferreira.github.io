@@ -73,7 +73,7 @@ input{
   border-radius: 6px;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: white;
 }
 .search-icon,
 .close-icon{
@@ -83,7 +83,7 @@ input{
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .search-icon{
-  color: var(--cor4);
+  color: var(--cor1);
   
   transform: translateY(-50%) rotate(90deg);
 }
