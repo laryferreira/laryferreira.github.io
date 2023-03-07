@@ -13,7 +13,7 @@
     --cor7: #20a8948e;
     --cor8: #b8cdca;
     --cor9: #ffffff;
-    --cor10: #229f8cc5;
+    --cor10: #1da893b7;
     --cor11: #25a18e91;
 
 
@@ -215,7 +215,7 @@ input{
     left:0;
     width:100%;
     height: 50px;
-    background-color:var(--cor6);
+    background-color:var(--cor10);
   }
   .footer-content-right {
     padding-right:40px;
@@ -226,7 +226,7 @@ input{
     font-size: 18px;
     font-family: 'Inconsolata';
     text-align: center;
-    color:var(--cor1);
+    color:var(--cor2);
   }
   .icon-style {
     height: 60px;
