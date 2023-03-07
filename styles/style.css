@@ -34,6 +34,16 @@
     text-decoration:overline;
 
 }
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+  
+  input {
+    font-size: 1rem;
+  }
+  
 .apresentacao {
     padding: 5% 15%;
     display: flex;
@@ -99,8 +109,6 @@
    row-gap: 3px;
    
 }
-
-
 .active,
 .faq_page:hover {
     background-color:var(--cor7);
