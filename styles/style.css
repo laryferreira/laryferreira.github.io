@@ -170,7 +170,7 @@ input{
 }
 .active,
 .faq_page:hover {
-    background-color:var(--cor7);
+    background-color:var(--cor4);
     color: var(--cor9);
 }
 
@@ -178,7 +178,7 @@ input{
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color:var(--cor9);
+    background-color:var(--cor6);
 }
 .faq_page:after {
     content: '\02795';
@@ -196,4 +196,10 @@ input{
 }
 .links {
     color: var(--cor2)
+}
+.footer {
+    background-color:var(--cor4);
+    text-align: center;
+    color:var(--cor9);
+    padding: 0% 0% 0% 0%;
 }
