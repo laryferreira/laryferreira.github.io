@@ -43,7 +43,7 @@
   width: 100%;
   margin: 0 40px;
   border-radius: 6px;
-  background-color: white;
+  background-color: var(--cor9);
   transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .input-box.open{
@@ -59,7 +59,7 @@ input{
   font-size: 16px;
   font-weight: 400;
   color: var(--cor4);
-  background-color: #fff;
+  background-color: var(--cor9);
 }
 .input-box.open{
   padding: 0 15px 0 65px;
@@ -73,7 +73,7 @@ input{
   border-radius: 6px;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color:var(--cor9);
 }
 .search-icon,
 .close-icon{
@@ -178,7 +178,7 @@ input{
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #b8cdca;
+    background-color:var(--cor9);
 }
 .faq_page:after {
     content: '\02795';
