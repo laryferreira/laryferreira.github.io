@@ -1,123 +1,141 @@
+/* IMPORTANDO A FONTE */
+
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inconsolata&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
-:root{
-    --cor1: #252636;
-    --cor2: #224024;
-    --cor3: #244131;
-    --cor4: #25a18e;
-    --cor5: #7ae582;
-    --cor6: #b8cebc;
-    --cor7: #20a8948e;
-    --cor8: #b8cdca;
-    --cor9: #ffffff;
-    --cor10: #1da893b7;
-    --cor11: #25a18e91;
-    --cor12: #bdc6c9;
+/* CORES */
 
-
+:root   {
+    --cordestaque: #252636;
+    --corlinks: #224024;
+    --corfaqpage: #244131;
+    --corprincipal: #25a18e;
+    --corhoverbox2: #7ae582;
+    --corfaqaberto: #b8cebc;
+    --corfundo: #ffffff;
+    --corhoverbox: #1da893b7;
 
 }  
-.body{
+
+/* BODY */
+
+.body   {
     font-family: 'Inconsolata';
-    background-color: var(--cor7);
+    background-color: var(--corfundo);
     
 }
-.cabecalho {
+
+/* HEADER */
+
+.cabecalho  {
     padding: 2% 1% 1% 15%;
 }
-.cabecalho_menu {
+
+.cabecalho_menu     {
     display: flex;
     gap: 70px;
 }
-.cabecalho_menu_link {
+.cabecalho_menu_link    {
     font-family: 'Inconsolata';
     font-size: 20px;
     font-weight: 800;
-    color: var(--cor1);
+    color: var(--cordestaque);
     text-decoration:overline;
 
 }
 
-
-.apresentacao {
+.apresentacao    {
     padding: 5% 15%;
     display: flex;
     align-items:flex-start;
     justify-content:center;
 }
-.titulo_destaque {
-    color: var(--cor4);
+
+.titulo_destaque     {
+    color: var(--corprincipal);
 }
-.apresentacao_conteudo{
+
+.apresentacao_conteudo  {
     width: 615px;
     gap: 2px
     
 }
-.apresentacao_conteudo_titulo{
+.apresentacao_conteudo_titulo   {
     font-size: 36px;
     font-family: 'Inconsolata';
 }
+
+/* BOXES -> CONTATO */
+
 .boxes {
 align-content: center;
 text-align: center;
 font-family: 'Inconsolata';
-  background-color: var(--cor9);
-  display: block;
-  width: 300px;
-  min-height: 30px;
-  border: 2px groove var(--cor4);
-  padding: 10px;
-  margin: calc(20vh - 30px) auto 0 auto;
-  box-shadow: 10px -10px 0 -3px var(--cor4), 10px -10px var(--cor4);
-  transition: box-shadow 1s, top 1s, left 1s;
-  position:initial;
-  top: 0;
-  left: 0;
-  cursor: pointer;
+background-color: var(--corfundo);
+display: block;
+width: 300px;
+min-height: 30px;
+border: 2px groove var(--corprincipal);
+padding: 10px;
+margin: calc(20vh - 30px) auto 0 auto;
+box-shadow: 10px -10px 0 -3px var(--corprincipal), 10px -10px var(--corprincipal);
+transition: box-shadow 1s, top 1s, left 1s;
+position:initial;
+top: 0;
+left: 0;
+cursor: pointer;
 }
-.boxes:hover{
+
+.boxes:hover    {
     top: 20px;
     left: 40px;
-    box-shadow: 0 0 0 -3px var(--cor2), 0 0 0 0 var(--cor5),
+    box-shadow: 0 0 0 -3px var(--corlinks), 0 0 0 0 var(--corhoverbox2),
 }
-.apresentacao_conteudo_titulo_contato{
+/* CONTEÚDO DOS CONTATOS */
+
+.apresentacao_conteudo_titulo_contato   {
     font-size: 20px;
 
 }
-.apresentacao_conteudo_texto{
+
+.apresentacao_conteudo_texto    {
     font-family: 'Inconsolata';
     text-align: left;
 }
-.apresentacao_conteudo_texto_contato {
+
+.apresentacao_conteudo_texto_contato    {
     font-size: 18px;
     gap: 2px;
 }
-.headline {
+
+/* TÍTULOS NO SITE E FAQ'S */
+
+.headline   {
     font-size: 23px;
-    color: --cor1;
+    color: --cordestaque;
     font-family: 'Inconsolata';
     text-align: center;
     border:solid;
-    border-color: var(--cor4);
+    border-color: var(--corprincipal);
 }
-.faq-container{
+
+.faq-container  {
     display:flex;
     justify-content:center;
     flex-direction:column;
 }
-.hr-line{
+.hr-line    {
   width: 60%;
   margin: auto;
 }
-.faq_page {
+.faq_page   {
     font-size: 18px;
     font-family: 'Inconsolata';
     text-align: left;
     line-height: 200%;
-    color: var(--cor3);
+    color: var(--corfaqpage);
     cursor: pointer;
     padding: 30px 20px;
     width: 60%;
@@ -126,7 +144,7 @@ font-family: 'Inconsolata';
     transition: 0.4s;
     margin: auto;
 }
-.faq_body{
+.faq_body   {
     font-size: 18px;
     font-family: 'Inconsolata';
     line-height: 200%;
@@ -137,51 +155,53 @@ font-family: 'Inconsolata';
    row-gap: 3px;
    
 }
+/* HOVER DO FAQ */
+
 .active,
-.faq_page:hover {
-    background-color: var(--cor10);
-    color: var(--cor9);
+.faq_page:hover     {
+    background-color: var(--corhoverbox);
+    color: var(--corfundo);
 }
 
-.faq_body {
+.faq_body   {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color:var(--cor6);
+    background-color:var(--corfaqaberto);
 }
-.faq_page:after {
+.faq_page:after     {
     content: '\02795';
     font-size: 13px;
-    color: var(--cor6);
+    color: var(--corfaqaberto);
     float: right;
     margin-left: 5px;
 }
-.active:after {
+.active:after   {
     content: "\2796";
+}
  
-}
-.destaque {
-    color: var(--cor3);
-}
-.links {
-    color: var(--cor2)
+/* LINKS */
+
+.links  {
+    color: var(--corlinks)
 }
 
-/* Footer */
 
-  .footer-content-right {
+/* FOOTER - GITHUB LINK */
+
+  .footer-content-right     {
     padding-right:40px;
     margin-top:20px;
     float:right;
   }
-  .icon-style {
+  .icon-style   {
     height: 60px;
     margin-left:2px;
     margin-top:-90px;
     margin-bottom: 15px;
 
   }
-  img {
+  img   {
     -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     -webkit-mask-size: 800%;
@@ -191,7 +211,7 @@ font-family: 'Inconsolata';
     position: relative;
 }
 
-img:hover {
+img:hover   {
     transition: mask-position 2s ease,-webkit-mask-position 2s ease;
     -webkit-mask-position: 120%;
     mask-position: 120%;
